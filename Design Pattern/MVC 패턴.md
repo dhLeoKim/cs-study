@@ -39,5 +39,20 @@
 * 받아낸 View 페이지 파일에 Model을 보낸 후 클라이언트에게 보낼 페이지를 완성
 * 완성된 View 파일을 클라이언트에 response하여 화면에 출력
 
+### Dispatcher Servlet
+* request를 처리하는 중심 컨트롤러
+* 서블릿 컨테이너에서 http 프로토콜을 통해 들어오는 모든 request에 대해 제일 앞단에서 중앙집중식으로 처리해주는 핵심적인 역할
+
+### Handler Mapping
+* 클라이언트의 request url을 어떤 컨트롤러가 처리해야 할 지 찾아서 Dispatcher Servlet에게 전달하는 역할
+* @RequestMapping 어노테이션
+
+### Controller
+* 실질적인 요청을 처리하는 곳
+* 모델의 처리 결과를 담아 Dispatcher Servlet에 반환
+
+### View Resolver
+* 컨트롤러의 처리 결과를 만들 view를 결정해주는 역할
+
 ---
 [MDN 참고](https://developer.mozilla.org/ko/docs/Glossary/MVC)
